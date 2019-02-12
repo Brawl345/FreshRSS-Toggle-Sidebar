@@ -1,0 +1,8 @@
+{
+	"name": "Toggle Sidebar",
+	"author": "Andreas Bielawski",
+	"description": "Togglesthe sidebar when button is clicked.",
+	"version": 1.0,
+	"entrypoint": "ToggleSidebar",
+	"type": "user"
+}
