@@ -19,22 +19,26 @@ function onReady() {
     
     // Toggle sidebar based on saved action
     var sidebar = document.getElementById("aside_feed");
+    var navEntries = document.getElementById("nav_entries");
     var sidebarHidden = localStorage.getItem("sidebar_hidden");
     if (sidebarHidden === "true") {
         sidebar.classList.add("aside_hidden");
+        navEntries.classList.add("aside_hidden");
     }
 }
 
 function toggleSidebar() {
     var sidebar = document.getElementById("aside_feed");
+    var navEntries = document.getElementById("nav_entries");
     if (sidebar.classList.contains("aside_hidden")) {
         sidebar.classList.remove("aside_hidden");
+        navEntries.classList.remove("aside_hidden");
         localStorage.setItem("sidebar_hidden", false);
     } else {
         sidebar.classList.add("aside_hidden");
+        navEntries.classList.add("aside_hidden");
         localStorage.setItem("sidebar_hidden", true);
     }
 }
-
 
 document.addEventListener('DOMContentLoaded', onReady, false);

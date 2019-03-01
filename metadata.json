@@ -2,7 +2,7 @@
 	"name": "Toggle Sidebar",
 	"author": "Andreas Bielawski",
 	"description": "Togglesthe sidebar when button is clicked.",
-	"version": 1.0,
+	"version": 1.1,
 	"entrypoint": "ToggleSidebar",
 	"type": "user"
 }
